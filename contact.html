@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Contact | NCDC Design Concept</title>
+<meta name="description" content="Contact the National Capital District Commission — NCDC design concept.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@500;600;700&family=Inter:wght@400;500;600&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="assets/style.css">
+</head>
+<body data-nav="contact">
+
+<div id="header-placeholder"></div>
+
+<main>
+  <section class="contact" style="padding-top:150px;">
+    <div class="wrap contact-grid">
+      <div>
+        <span class="eyebrow" style="color:var(--teal-400);">Get in touch</span>
+        <h2>Reach the Commission.</h2>
+        <p class="lead">For permits, licenses, registry services, or general enquiries, contact NCDC directly or visit the Waigani Drive office.</p>
+        <div class="contact-info">
+          <div><span>✉</span><div><b>EMAIL</b>info@ncdc.gov.pg</div></div>
+          <div><span>☎</span><div><b>PHONE</b>+675 324 0700</div></div>
+          <div><span>⌂</span><div><b>ADDRESS</b>Waigani Drive, National Capital District, Papua New Guinea</div></div>
+        </div>
+      </div>
+      <form onsubmit="event.preventDefault(); alert('This is a design concept — connect a real form handler before any production use.');">
+        <div class="field">
+          <label for="name">Name</label>
+          <input id="name" type="text" placeholder="Your name" required>
+        </div>
+        <div class="field">
+          <label for="dept">Enquiry type</label>
+          <select id="dept">
+            <option>Building Approvals</option>
+            <option>Business Licensing</option>
+            <option>Civil Registry</option>
+            <option>Waste &amp; Environment</option>
+            <option>Markets &amp; Trading</option>
+            <option>Community Grants</option>
+            <option>General enquiry</option>
+          </select>
+        </div>
+        <div class="field">
+          <label for="msg">Message</label>
+          <textarea id="msg" placeholder="How can we help?" required></textarea>
+        </div>
+        <button type="submit" class="btn btn-primary" style="align-self:flex-start;">Send message →</button>
+      </form>
+    </div>
+  </section>
+</main>
+
+<div id="footer-placeholder"></div>
+<script src="assets/main.js"></script>
+</body>
+</html>
